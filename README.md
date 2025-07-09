@@ -8,7 +8,7 @@ This research focuses on analyzing molecular habitats within Glioblastoma Multif
 
 This study presents the following methodology to understand intratumoral heterogeneity in glioblastoma:
 
-- **Multi-parameter MRI Analysis**: Characterization of tumor microenvironment using ADC (diffusion), CBV (perfusion), and KTRANS (permeability) imaging
+- **Multi-parameter MRI Analysis**: Characterization of tumor microenvironment using ADC (diffusion), rCBV (perfusion), and Ktrans (permeability) imaging
 - **Habitat-based Clustering**: Classification of 8 molecular habitat regions using GMM
 - **Tumor Heterogeneity Quantification**: Analysis of tumor biological characteristics through distribution and properties of each habitat
 - **Prognostic Prediction Modeling**: Clinical outcome prediction through histogram feature-based linear regression models
@@ -48,7 +48,7 @@ Perform skull stripping on all sequences using the [SynthStrip](https://surfer.n
 Register all images except CE-T1WI to the isometric voxel CE-T1WI image using rigid transformation with [ANTsPy](https://github.com/ANTsX/ANTsPy).
 
 ### 4. Tumor Segmentation
-Generate tumor segmentation masks using HD-GLIO (a variant of the nnU-Net framework) with T1, CET1, T2, and FLAIR data.
+Generate tumor segmentation masks using [HD-GLIO](https://github.com/CCI-Bonn/HD-GLIO) (a variant of the nnU-Net framework) with T1, CET1, T2, and FLAIR data.
 
 ## Input Files
 
