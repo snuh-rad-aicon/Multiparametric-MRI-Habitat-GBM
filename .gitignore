@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
 # C extensions
@@ -20,6 +20,7 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -46,7 +47,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py.cover
+*.py,cover
 .hypothesis/
 .pytest_cache/
 cover/
@@ -205,3 +206,81 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Machine Learning Models
+*.pkl
+*.h5
+*.hdf5
+*.model
+*.pt
+*.pth
+*.ckpt
+*.pb
+*.onnx
+.models/
+
+# Medical Imaging Data Files
+*.nii
+*.nii.gz
+*.dcm
+*.dicom
+*.img
+*.hdr
+*.mnc
+*.mgh
+*.mgz
+
+# Data directories
+data/
+datasets/
+raw_data/
+processed_data/
+patient_data/
+medical_data/
+
+# Results and Output directories
+results/
+output/
+outputs/
+figures/
+plots/
+logs/
+experiments/
+checkpoints/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Configuration files (may contain sensitive info)
+config.ini
+config.yaml
+config.json
+secrets.json
+credentials.json
+
+# Large files and archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Specific to this project
+cluster_map_*.nii.gz
+histogram_results.csv
+cluster_volumes.csv
+*_registered.nii.gz
+*_skull_stripped.nii.gz
+*_iso.nii.gz
+brain_mask.nii.gz
