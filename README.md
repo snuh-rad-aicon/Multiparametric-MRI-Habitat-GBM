@@ -56,11 +56,11 @@ Generate tumor segmentation masks using [HD-GLIO](https://github.com/CCI-Bonn/HD
 
 The following NIfTI files are required:
 - `adc.nii.gz`: ADC (Apparent Diffusion Coefficient) map (units: μm²/ms)
-- `cbv.nii.gz`: CBV (Cerebral Blood Volume) map  
-- `ktrans.nii.gz`: KTRANS (Volume Transfer Constant) map (units: min⁻¹)
+- `cbv.nii.gz`: rCBV (Relative Cerebral Blood Volume) map  
+- `ktrans.nii.gz`: Ktrans (Volume Transfer Constant) map (units: min⁻¹)
 - `WT_tumor_mask.nii.gz`: Tumor region mask (binary mask)
 
-**Note**: ADC should be normalized to μm²/ms units, and KTRANS to min⁻¹ units.
+**Note**: ADC should be normalized to μm²/ms units, and Ktrans to min⁻¹ units.
 
 ## Usage
 
@@ -78,8 +78,8 @@ python analysis/habitat_clustering.py \
 
 #### Parameter Description
 - `--adc`: ADC NIfTI file path (required)
-- `--cbv`: CBV NIfTI file path (required)
-- `--ktrans`: KTRANS NIfTI file path (required)
+- `--cbv`: rCBV NIfTI file path (required)
+- `--ktrans`: Ktrans NIfTI file path (required)
 - `--mask`: Tumor mask NIfTI file path (required)
 - `--model-dir`: Directory containing GMM models (default: `.models/habitat/gmm`)
 - `--output`: Output clustering mask file path (default: `cluster_map_1-8.nii.gz` in the same directory as ADC file)
@@ -87,7 +87,7 @@ python analysis/habitat_clustering.py \
 ## Clustering Algorithm
 
 ### 1. Feature-wise Binary Classification
-Each MRI parameter (ADC, CBV, KTRANS) is binary classified into high/low values using GMM:
+Each MRI parameter (ADC, rCBV, Ktrans) is binary classified into high/low values using GMM:
 - **High value cluster**: 1
 - **Low value cluster**: 0
 
@@ -95,7 +95,7 @@ Each MRI parameter (ADC, CBV, KTRANS) is binary classified into high/low values 
 Eight habitat clusters are created by weighted combination of the three feature binary labels:
 
 ```
-Final Cluster = ADC×4 + CBV×2 + KTRANS×1 + 1
+Final Cluster = ADC×4 + rCBV×2 + Ktrans×1 + 1
 ```
 
 ### 3. Cluster Interpretation
