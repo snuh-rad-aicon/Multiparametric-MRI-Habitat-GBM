@@ -2,7 +2,7 @@
 
 **Researcher**: Min Seo Choi, Department of Radiology, Seoul National University Hospital
 
-This research focuses on analyzing molecular habitats within Glioblastoma Multiforme (GBM) tumors using Gaussian Mixture Model (GMM) based clustering. We utilize multi-parameter MRI (ADC, CBV, KTRANS) to quantify intratumoral heterogeneity and identify habitat patterns based on molecular characteristics.
+This research focuses on analyzing tumor habitats within IDH-wildtype glioblastoma (GBM) using Gaussian Mixture Model (GMM) based clustering. We utilize multi-parameter MRI (ADC, rCBV, Ktrans) to quantify intratumoral heterogeneity and identify habitat patterns differences between molecular GBM (mol-GBM) and histological GBM (hist-GBM)
 
 ## Research Overview
 
