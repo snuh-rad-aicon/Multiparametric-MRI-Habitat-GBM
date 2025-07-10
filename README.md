@@ -95,7 +95,7 @@ Each MRI parameter (ADC, rCBV, Ktrans) is binary classified into high/low values
 Eight habitat clusters are created by weighted combination of the three feature binary labels:
 
 ```
-Final Cluster = ADC×4 + rCBV×2 + Ktrans×1 + 1
+Final Cluster = ADC×2 + rCBV×2 + Ktrans×2 + 1
 ```
 
 ### 3. Cluster Interpretation
@@ -182,7 +182,7 @@ C3: Low-High-Low    |   1876 voxels |   1876.0 mm³ |  12.2%
 
 ### Histogram Feature Analysis
 
-Extract histogram features from ADC, CBV, and KTRANS and perform predictions using pre-trained linear regression models.
+Extract histogram features from ADC, rCBV, and Ktrans and perform predictions using pre-trained univariable and/or multivarialbe logistic regression models.
 
 #### Usage
 ```bash
@@ -196,13 +196,19 @@ python analysis/histogram_features.py \
 ```
 
 #### Extracted Features
-From each imaging modality (ADC, CBV, KTRANS):
+From each imaging modality (ADC, rCBV, Ktrans):
 - **Mean**: Average value
 - **Median**: Median value  
 - **P10**: 10th percentile
 - **P90**: 90th percentile
 
-A total of 12 histogram features are extracted and used as input for the linear regression model.
+A total of 12 histogram features are extracted and used as input for the univariable regression model.
+
+To assess the added diagnostic value of combining MRI modalities, multivariable logistic regression models were constructed in three configurations: 
+(1) single modality (2) dual modalities, and (3) all modalities combined. 
+For each configuration, statistically significant features identified in the univariable analysis were used as inputs for multivariable analysis:
+ADC : 10th percentile , rCBV : Mean, 90th percentile , Ktrans : Mean, 90th percentile
+
 
 ## License
 
