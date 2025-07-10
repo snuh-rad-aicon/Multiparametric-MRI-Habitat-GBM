@@ -8,12 +8,14 @@ This research focuses on analyzing tumor habitats within IDH-wildtype glioblasto
 
 This study presents the following methodology to understand intratumoral heterogeneity in glioblastoma:
 
-- **Multi-parameter MRI Analysis**: Characterization of tumor microenvironment using ADC (diffusion), rCBV (perfusion), and Ktrans (permeability) imaging
+- **Multi-parameteric MRI Analysis**: Characterization of tumor microenvironment using ADC (diffusion), rCBV (perfusion), and Ktrans (permeability) imaging from DWI, DSC-MRI, and DCE-MRI, respectively
 - **Habitat-based Clustering**: Classification of 8 molecular habitat regions using GMM
 - **Tumor Heterogeneity Quantification**: Analysis of tumor biological characteristics through distribution and properties of each habitat
-- **Prognostic Prediction Modeling**: Clinical outcome prediction through histogram feature-based linear regression models
+- **Prognostic Prediction Modeling**: Clinical outcome prediction through histogram feature-based logistic regression models
 
-This research aims to contribute to personalized treatment strategy development and prognosis prediction by radiologically analyzing the molecular heterogeneity of glioblastoma.
+This study aims to enhance
+- the understanding of intratumoral heterogeneity in glioblastoma (GBM) by radiologically describe tumor habitats in a high-dimensional manner using multiparametric physiologic MRI.
+- the understading of recently distinguished but relatively underexplored mol-GBM, thereby contributing to refined radiological insights and advancing stratified therapeutic approaches.
 
 ### Model Download
 
