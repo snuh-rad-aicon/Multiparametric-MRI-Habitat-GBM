@@ -205,9 +205,14 @@ From each imaging modality (ADC, rCBV, Ktrans):
 A total of 12 histogram features are extracted and used as input for the univariable regression model.
 
 To assess the added diagnostic value of combining MRI modalities, multivariable logistic regression models were constructed in three configurations: 
-(1) single modality (2) dual modalities, and (3) all modalities combined. 
-For each configuration, statistically significant features identified in the univariable analysis were used as inputs for multivariable analysis:
-ADC : 10th percentile , rCBV : Mean, 90th percentile , Ktrans : Mean, 90th percentile
+- (1) single modality
+- (2) dual modalities
+- (3) all modalities combined. 
+
+For each configuration, statistically significant features identified in the univariable analysis were used as inputs for our multivariable regression models:
+- ADC : 10th percentile
+- rCBV : Mean, 90th percentile
+- Ktrans : Mean, 90th percentile
 
 
 ## License
