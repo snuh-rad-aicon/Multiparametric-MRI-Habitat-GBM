@@ -12,8 +12,7 @@ Minseo Choi*, Yunseo Choi*, Junhyeok Lee, Seong Yun Jeong, Minchul Kim, Inpyeong
 
 **Korean Journal of Radiology**. 2026;27(7):670–681. Published online June 23, 2026.  
 **DOI:** [10.3348/kjr.2025.1969](https://doi.org/10.3348/kjr.2025.1969)  
-**PMID:** [42388098](https://pubmed.ncbi.nlm.nih.gov/42388098/)  
-**PMCID:** [PMC13333228](https://pmc.ncbi.nlm.nih.gov/articles/PMC13333228/)
+**PMID:** [42388098](https://pubmed.ncbi.nlm.nih.gov/42388098/)
 
 **Corresponding author:** Kyu Sung Choi, Department of Radiology, Seoul National University Hospital, Seoul, Republic of Korea.
 
