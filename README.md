@@ -2,7 +2,20 @@
 
 **Researcher**: Min Seo Choi, Department of Radiology, Seoul National University Hospital
 
-This research focuses on analyzing tumor habitats within IDH-wildtype glioblastoma (GBM) using Gaussian Mixture Model (GMM) based clustering. We utilize multi-parameteric physiologic MRI (ADC, rCBV, Ktrans) to quantify intratumoral heterogeneity and identify habitat patterns differences between molecular GBM (mol-GBM) and histological GBM (hist-GBM)
+Research code accompanying the publication:
+
+**Distinguishing Molecular and Histologic Glioblastomas Using Multiparametric MRI-Based Habitat Analysis**
+
+Minseo Choi*, Yunseo Choi*, Junhyeok Lee, Seong Yun Jeong, Minchul Kim, Inpyeong Hwang, Ji Eun Park, Yae Won Park, Seung Hong Choi, and Kyu Sung Choi.
+
+*These authors contributed equally to this work.*
+
+**Korean Journal of Radiology**. 2026;27(7):670–681. Published online June 23, 2026.  
+**DOI:** [10.3348/kjr.2025.1969](https://doi.org/10.3348/kjr.2025.1969)  
+**PMID:** [42388098](https://pubmed.ncbi.nlm.nih.gov/42388098/)  
+**PMCID:** [PMC13333228](https://pmc.ncbi.nlm.nih.gov/articles/PMC13333228/)
+
+**Corresponding author:** Kyu Sung Choi, Department of Radiology, Seoul National University Hospital, Seoul, Republic of Korea.
 
 ## Research Overview
 
